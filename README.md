@@ -40,20 +40,70 @@ The Cafe Management System is a Java-based application designed to streamline an
 - **JavaFX:** Employed for creating the graphical user interface (GUI).
 - **Maven:** Dependency management and project build tool.
 
-## Setup
+## Application Setup/ How to run
 
 1. **Database Setup:**
     - Create a MySQL database and import the provided schema.
-    - Update the `database.properties` file with the appropriate database connection details.
+    - Update the `constants.java` file with the appropriate database connection details.
 
 2. **Java Development Kit (JDK):**
     - Ensure you have a compatible JDK installed (e.g., JDK 8 or later).
 
 3. **Maven:**
     - Install Maven on your system.
+    - Open the project as Maven Project in Netbeans
     - Build the project using the `mvn clean install` command.
 
-4. **Run the Application:**
+ 
+4. **Add MySQL Connector to Maven:**
+   - Open your project's `pom.xml` file.
+   - Add the MySQL Connector and DbUtils dependencies:
+
+     ```xml
+     <dependencies>
+         <!-- MySQL Connector -->
+         <dependency>
+             <groupId>mysql</groupId>
+             <artifactId>mysql-connector-java</artifactId>
+             <version>8.0.23</version> <!-- Use the latest version -->
+         </dependency>
+
+         <!-- DbUtils -->
+         <dependency>
+             <groupId>net.sourceforge.dbutils</groupId>
+             <artifactId>commons-dbutils</artifactId>
+             <version>1.7</version> <!-- Use the latest version -->
+         </dependency>
+     </dependencies>
+     ```
+
+5. **Download DbUtils Package:**
+   - Download `res2xml.jar` from SourceForge [here](https://sourceforge.net/projects/res2xml/).
+   - Add `res2xml.jar` to your project.
+
+6. **Create MySQL Database:**
+   - Open your MySQL client.
+   - Execute the following SQL commands:
+
+     ```sql
+     CREATE DATABASE IF NOT EXISTS cafeDb;
+     USE cafeDb;
+
+     CREATE TABLE IF NOT EXISTS ProductTbl (
+         Pnum INT PRIMARY KEY AUTO_INCREMENT,
+         Pname VARCHAR(255),
+         Category VARCHAR(40),
+         Price INT
+     );
+
+     CREATE TABLE IF NOT EXISTS BillTbl (
+         Bnum INT PRIMARY KEY AUTO_INCREMENT,
+         Seller VARCHAR(30),
+         BDate VARCHAR(30),
+         Amount INT
+     );
+     ```
+7. **Run the Application:**
     - Execute the generated JAR file or run the application from the IDE.
 
 ## Usage
@@ -81,7 +131,7 @@ The Cafe Management System is a Java-based application designed to streamline an
 ![Auditing](BillHistory.png)
 *Figure 3: Auditing Page*
 
-## Project Summary
+## Project Collaboration Summary
 
 ## Task 1: UI Layout and Item Page
 - Designed and implemented the Item Page layout with sections for reading, adding, deleting, and updating items.
