@@ -81,47 +81,47 @@ The Cafe Management System is a Java-based application designed to streamline an
 ![Auditing](BillHistory.png)
 *Figure 3: Auditing Page*
 
-## Project Collaboration Summary
+## Project Summary
 
 ## Task 1: UI Layout and Item Page
 - Designed and implemented the Item Page layout with sections for reading, adding, deleting, and updating items.
 - Integrated the filter functionality on the Item Page based on item type.
-- **Contributors:** Kaushik, Sunanth
+
 
 ## Task 2: Selling Page and Quantity Management
 - Designed and implemented the Selling Page layout.
 - Implemented the functionality to select items, input quantities, and add items to the bill.
 - Designed the layout for generating printed bills in PDF format.
-- **Contributors:** Vinay, Kavya
+
 
 ## Task 3: Bills and Login/Logout
 - Implemented the login and logout functionality.
 - Designed the layout for the Bills Page and implemented functionality to fetch and display all bills.
 - Used Lambdas to show the highest and lowest recorded bills.
-- **Contributors:** Kaushik, Sravanti
+
 
 ## Task 4: Database Setup and Cafe
 - Assisted in setting up the database.
 - Set up SQL Queries.
-- **Contributors:** Vinay, Sriya
+
 
 ## Task 5: Cafe Factory and Cafe Item
 - Collaborated on the implementation of the Cafe Factory.
 - Contributed to the development of the Cafe Item class.
-- **Contributors:** Sunanth, Kavya
+
 
 ## Task 6: Beverage and Item Bill Changes
 - Contributed to the implementation of the Beverage Factory.
 - Worked on the development of the Beverage Item class.
 - Collaborated on changes to the Item Bill class based on project requirements.
-- **Contributors:** Vamsi, Sriya
+
 
 ## Task 7: Cake Factory and Shake
 - Collaborated on the implementation of the Cake Factory.
 - Contributed to the development of the Cake Item class.
 - Worked on the implementation of the Shake Factory.
 - Contributed to the development of the Shake Item class and categories.
-- **Contributors:** Vamsi, Sravanti
+
 
 
 ## Acknowledgements
